@@ -10,7 +10,7 @@ body{
     max-width: 1440px;
         }
       
-header{
+.header{
     /*border: 1px solid rebeccapurple;*/
     background-image: url("../cat_energy/images/index-background-desktop.png");
     background-repeat: no-repeat;
