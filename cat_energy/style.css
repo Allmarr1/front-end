@@ -3,25 +3,46 @@
 }
 
 body{
-    margin: 2px;
-    margin-left: 110px;
+    /* margin: 2px;
+    margin-left: 110px; */
     font-family: 'Oswald', sans-serif;
     color:#000000;
-    max-width: 1440px;
+    /* max-width: 1440px; */
         }
       
 .header{
     /*border: 1px solid rebeccapurple;*/
-    background-image: url("../cat_energy/images/index-background-desktop.png");
+    /* background-image: url("../cat_energy/images/index-background-desktop.png");
     background-repeat: no-repeat;
     background-position-x: right;
     background-size: 720px 696px;
-    max-width: 1440px;
+    max-width: 1440px; */
+    position: relative;
+    }
     
-}   
+.header::after, .header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 50%;
+    z-index: -1;
+}    
+
+.header::after {
+    background-color: #ffffff;
+}
+
+.header::before {
+    background-image: url("../cat_energy/images/index-background-desktop.png");
+    background-repeat: no-repeat;
+    right: 0;
+}
 
 .container{
-    
+    max-width: 1330px;
+    margin-left: auto;
+    margin-right: auto;    
 
 }
 
@@ -45,11 +66,10 @@ h3{
 .menu{
     display: flex;
     justify-content: flex-end;
-    max-width: 1330px;
-    /*border: 1px solid blue;*/
-    margin: 0 auto;
-    padding: 0 110px;
-        
+    max-width:50%;
+    position: relative;
+    left: 50%;
+     
 }
 
 .menu a{
@@ -60,14 +80,39 @@ h3{
     text-decoration: none;
     }
 
+.menu a:last-child {
+    padding-right: 0;
+}
+
 .btn{
     font-size: 20px;
     color: #ffffff;
     background-color:#68B738;
     text-decoration: none;
     font-weight: 400;
-    
-}    
+} 
+
+.index-can {
+    position: absolute;
+    width: 552px;
+    height: 499px;
+    left: 486px;
+    top: 154px;
+}
+
+.logo-desktop{
+    position: absolute;
+    width: 202px;
+    height: 59px;
+    left: 38px;
+    top: 66px;
+
+}
+
+.container main{
+    margin-top: 236px;
+    margin-left: 118px;
+}
 
 
    
