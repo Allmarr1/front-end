@@ -9,7 +9,7 @@ body{
     color:#000000;
     /* max-width: 1440px; */
         }
-      
+
 .header{
     /*border: 1px solid rebeccapurple;*/
     /* background-image: url("../cat_energy/images/index-background-desktop.png");
@@ -18,8 +18,9 @@ body{
     background-size: 720px 696px;
     max-width: 1440px; */
     position: relative;
+    min-height: 695px;
     }
-    
+
 .header::after, .header::before {
     content: '';
     position: absolute;
@@ -27,7 +28,7 @@ body{
     bottom: 0;
     width: 50%;
     z-index: -1;
-}    
+}
 
 .header::after {
     background-color: #ffffff;
@@ -36,28 +37,45 @@ body{
 .header::before {
     background-image: url("../cat_energy/images/index-background-desktop.png");
     background-repeat: no-repeat;
+    background-color: #68B738;
+    background-size: cover;
     right: 0;
 }
 
-.container{
-    max-width: 1330px;
-    margin-left: auto;
-    margin-right: auto;    
+.header-text{
+    width: 530px;
+    padding-top: 51px;
+    padding-left: 80px;
+}
 
+.header-title{
+    margin-bottom: 35px;
+
+}
+
+.container{
+    max-width: 1220px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
 }
 
 h1{
    font-weight: 400;
    font-size: 60px;
    line-height: 60px;
-   width: 450px;
+   margin-top: 0px;
 }
 
 h3{
    font-weight: 400;
    font-size: 20px;
    line-height: 20px;
-   padding-top: 40px;
+}
+
+.page-subtitle{
+    margin-bottom: 70px;
+
 }
 /* common style end*/
 
@@ -69,11 +87,12 @@ h3{
     max-width:50%;
     position: relative;
     left: 50%;
-     
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 .menu a{
-    padding: 71px 35px;
+    padding: 25px 17px;
     font-weight: 400;
     font-size: 20px;
     color: #ffffff;
@@ -90,29 +109,45 @@ h3{
     background-color:#68B738;
     text-decoration: none;
     font-weight: 400;
-} 
+    text-transform: uppercase;
+    padding: 12px 27px;
+}
 
 .index-can {
     position: absolute;
     width: 552px;
-    height: 499px;
-    left: 486px;
-    top: 154px;
+    height: 500px;
+    left: calc(50% - 162px);
+    top: -31px;
 }
 
 .logo-desktop{
     position: absolute;
     width: 202px;
     height: 59px;
-    left: 38px;
-    top: 66px;
-
+    left: 0px;
+    top: 54px;
 }
 
-.container main{
+.container .header-main{
     margin-top: 236px;
     margin-left: 118px;
+    position: relative;
+}
+
+.active{
+    position: relative;
+}
+
+.active::after{
+    content: '';
+    position: absolute;
+    bottom: 14px;
+    left: 17px;
+    right: 17px;
+    background-color: #ffffff;
+    height: 2px;
 }
 
 
-   
+
