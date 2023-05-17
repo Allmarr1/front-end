@@ -75,6 +75,8 @@ h2{
 
 .blocks-title{
     text-transform: uppercase;
+    padding-left: 189px;
+    padding-top: 22px;
 }
 
 h3{
@@ -86,6 +88,14 @@ h3{
 p{
     font-family: Arial, Helvetica, sans-serif;
     color: #000000;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    padding-top: 45px;
+    padding-left: 25px;
+
 }
 
 .page-subtitle{
@@ -164,13 +174,38 @@ p{
     height: 2px;
 }
 
-.container-blocks{
-    margin: 0 auto;
+.link{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 28px;
+    position: absolute;
+    margin-top: -11px;
+    margin-left: 27px;
+    
 }
+
+.catalog{
+    text-transform: uppercase;
+    color: #000000;
+    text-decoration: none;
+    font-family: Oswald;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: center;
+    width: 168px;
+    height: 38px;
+}
+
+/*.container-blocks{
+    margin: 0 auto;
+}*/
 
 .blocks-posts{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-wrap: nowrap;
 }
 
@@ -180,7 +215,28 @@ p{
     padding: 25px;
     margin-bottom: 15px;
     background-color: #F2F2F2;
+    margin-top: 81px;
 }
+
+.cat-back1{
+    position: absolute;
+    margin-top: -103px;
+    margin-left: 27px;;
+}
+
+.cat-back2{
+    position: absolute;
+    margin-top: -96px;
+    margin-left: 8px;
+}
+
+/*.block1 {
+    margin-left: 50px;
+}
+
+.block2 {
+    margin-right: 50px;
+}*/
 
 
 
