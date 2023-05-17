@@ -180,8 +180,9 @@ p{
     align-items: center;
     gap: 28px;
     position: absolute;
-    margin-top: -11px;
-    margin-left: 27px;
+    padding-top: 27px;
+    margin-left: -6px;
+    text-decoration: none;
     
 }
 
