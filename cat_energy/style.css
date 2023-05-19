@@ -67,6 +67,13 @@ h1{
    margin-top: 0px;
 }
 
+.h1{
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 60px;
+    margin-top: 0px;
+}
+
 h2{
     font-weight: 400;
     font-size: 36px;
@@ -75,7 +82,7 @@ h2{
 
 .blocks-title{
     text-transform: uppercase;
-    padding-left: 189px;
+    padding-left: 165px;
     padding-top: 22px;
 }
 
@@ -94,7 +101,7 @@ p{
     letter-spacing: 0em;
     text-align: left;
     padding-top: 45px;
-    padding-left: 25px;
+    /* padding-left: 25px; */
 
 }
 
@@ -178,10 +185,10 @@ p{
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 2px;
+    gap: 27px;
     position: absolute;
     padding-top: 11px;
-    margin-left: -1px;
+    margin-left: 3px;
     text-decoration: none;
     
 }
@@ -196,8 +203,8 @@ p{
     line-height: 30px;
     letter-spacing: 0em;
     text-align: center;
-    width: 160px;
-    height: 38px;
+    /* width: 160px;
+    height: 38px; */
 }
 
 /*.container-blocks{
@@ -213,22 +220,22 @@ p{
 .posts{
     width: 570px;
     height: 374px;
-    padding: 25px;
+    padding: 25px 50px;
     margin-bottom: 15px;
     background-color: #F2F2F2;
     margin-top: 81px;
+    position: relative;
 }
 
 .cat-back1{
     position: absolute;
     margin-top: -103px;
-    margin-left: 27px;;
 }
 
 .cat-back2{
     position: absolute;
     margin-top: -96px;
-    margin-left: 8px;
+    left: 34px;
 }
 
 .description{
@@ -239,43 +246,40 @@ p{
     display: flex;
     justify-content: space-between;
     flex-wrap: nowrap;
+    margin: 0px -30px;
 }
 
 .block-mini{
-    width: 230px;
-    height: 280px;
+    padding: 10px 32px;
+    position: relative;
 }
 
-.group1{
-    position: absolute;
+.block-mini::before{
+    content: '';
     width: 80px;
     height: 80px;
-    margin-top: 31px;
-    margin-left: 0px;
+    top: 31px;
+    left: 32px;
+    position: absolute;
+    background-color: #68B738;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
-.group2{
-    position: absolute;
-    width: 80px;
-    height: 80px;
-    margin-top: 31px;
-    margin-left: -5px;
+.group1.block-mini::before{
+    background-image: url(./images/blocks/icon_leaf.png);
 }
 
-.group3{
-    position: absolute;
-    width: 80px;
-    height: 80px;
-    margin-top: 31px;
-    margin-left: -10px;
+.group2.block-mini::before{
+    background-image: url(./images/blocks/icon_tub.png);
 }
 
-.group4{
-    position: absolute;
-    width: 80px;
-    height: 80px;
-    margin-top: 31px;
-    margin-left: -15px;
+.group3.block-mini::before{
+    background-image: url(./images/blocks/icon_eat.png);
+}
+
+.group4.block-mini::before{
+    background-image: url(./images/blocks/icon_alarm.png);
 }
 
 .numbers{
@@ -287,17 +291,17 @@ p{
     line-height: 280px;
     text-align: center;
     color: #F2F2F2;
-    margin-left: 113px;
-    margin-top: 30px;
+    top: -8px;
+    left: 150px;
     z-index: -1;
 }
 
-.p-block1{
+.p-block{
     padding-top: 127px;
-    margin-left: -25px;
+    padding-left: 0px;
 }
 
-.p-block2{
+/* .p-block2{
     padding-top: 127px;
     margin-left: -31px;
 }
@@ -310,7 +314,7 @@ p{
 .p-block4{
     padding-top: 127px;
     margin-left: -41px;
-}
+} */
 
 
 
